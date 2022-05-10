@@ -7,7 +7,7 @@ const Home = () => {
       <div className="left-box">
         <p className="presentation"> <span>Hello, </span>I'm Sarah,<br></br> web developer</p>
         <p className="detail"> Front End / Full Stack Developer </p>
-        <div className="contact"><Link to=""> Contact me</Link></div>
+        <div className="contact"><Link to="/contact"> Contact me</Link></div>
       </div>
       <div className="right-box">
         {/* <img src={' '} alt="profile picture"/> */}
