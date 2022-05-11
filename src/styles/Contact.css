@@ -43,6 +43,7 @@ input, textarea {
 }
 .email-content textarea {
   height: 160px;
+  padding: 10px;
 }
 .button-submit{
   display: flex;

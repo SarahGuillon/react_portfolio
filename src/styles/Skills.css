@@ -1,0 +1,30 @@
+
+.chart {
+  width: 600px;
+}
+
+.chart span {
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fulfill {
+  background-color: #A58965;
+  color: transparent;
+  width: 60%;
+  height: 5px;
+}
+.empty {
+  background-color: grey;
+  width: 40%;
+  color: transparent;
+  height: 5px;
+}
