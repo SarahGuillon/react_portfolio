@@ -1,0 +1,46 @@
+.home {
+  margin-top: 22vh;
+  margin-left: 10vh;
+  color:#FFFFFF;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.home .presentation {
+  font-weight: 600;
+  font-size: 64px;
+  margin: 0;
+}
+
+.home .presentation span {
+  color:#A58965;
+  font-size: 66px;
+}
+
+.home .detail {
+  font-size: 18px;
+  color: #ADADAD;
+  margin-bottom: 80px;
+}
+
+.home .contact a {
+  text-decoration: none;
+  color:#FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 1px;
+  padding: 12px 48px;
+  background-color:  #1F1F1F;
+}
+
+.home .contact a:hover {
+  color:#e4c9a6;
+  border: 2px solid #e4c9a6;
+  font-weight: bolder;
+}
+
+.home img {
+  max-width: 50vh;
+  border-radius: 60%;
+  opacity: 0.5;
+}
