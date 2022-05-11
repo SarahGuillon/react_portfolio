@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="map-contact-info">
             <p>Sarah Guillon</p>
             <p>St-Sébastien-Sur-Loire 44230</p>
-            <p>sarah.guillon.11@gmail.com</p>
+            <p><span>@</span>: sarah.guillon.11@gmail.com</p>
         </div>
       </div>
     </div>

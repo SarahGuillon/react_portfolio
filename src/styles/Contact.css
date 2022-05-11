@@ -60,21 +60,26 @@ background-color:  #A58965;
 cursor: pointer;
 }
 
-.map-contact-info p {
+.map-contact-info p, .map-contact-info span {
   background-color: black;
-  color: white;
+  color:white;
   padding: 2px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.map-contact-info span {
+  color:#bd9f78;
+  font-weight: 700;
 }
 
 .map-contact-info {
-  padding: 2%;
+  padding: 3%;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: black;
-  width: 40%;
-  margin: 30px;
-  border:  1px solid #A58965;
+  width: 45%;
+  margin: 50px;
+  /* border:  1px solid white; */
 }
 
 .card-map {
