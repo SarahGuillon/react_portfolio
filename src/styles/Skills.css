@@ -1,30 +1,91 @@
 
 .chart {
-  width: 600px;
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  height: 40px;
 }
 
-.chart span {
-  margin-top: 20px;
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66%;
+  margin-bottom: 10px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.subtitle:hover {
+  background-color: #2d2c2c;
+}
+
+h2, .svg-inline--fa {
+  background-color: transparent;
+}
+
+
+
+.chart p {
+  width: 15%;
+  margin-right: 10px;
+  padding-bottom: 4px;
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  width: 50%;
 }
 
-.fulfill {
+.filled-60 {
   background-color: #A58965;
   color: transparent;
   width: 60%;
   height: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-.empty {
-  background-color: grey;
+.unfilled-40 {
+  background-color: #a9a7a7;
   width: 40%;
   color: transparent;
   height: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.filled-50 {
+  background-color: #A58965;
+  color: transparent;
+  width: 50%;
+  height: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.unfilled-50 {
+  background-color: #a9a7a7;
+  width: 50%;
+  color: transparent;
+  height: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.filled-70 {
+  background-color: #A58965;
+  color: transparent;
+  width: 70%;
+  height: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.unfilled-30 {
+  background-color: #a9a7a7;
+  width: 30%;
+  color: transparent;
+  height: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

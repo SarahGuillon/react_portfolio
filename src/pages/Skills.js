@@ -1,40 +1,64 @@
 import '../styles/Skills.css';
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Skills = () => {
   return (
     <div className="card">
       <div className="title">
-        <h1> Skills</h1>
+        <h1>Skills</h1>
       </div>
       <div className="skills-details">
-        <h2>Web</h2>
+        <div className="subtitle">
+          <h2>Web </h2>
+          <FontAwesomeIcon icon={faCaretDown} />
+        </div>
         <div class="chart">
-          <span>Ruby on Rails</span>
+          <p>Ruby on Rails</p>
           <footer>
-            <div className='fulfill'>60%</div>
-            <div className='empty'>40%</div>
+            <div className='filled-60'>60%</div>
+            <div className='unfilled-40'>40%</div>
           </footer>
         </div>
-          <div class="chart">
-          <span>CSS</span>
+        <div class="chart">
+          <p>JavaScript</p>
           <footer>
-            <div className='fulfill'>60%</div>
-            <div className='empty'>40%</div>
+            <div className='filled-50'>50%</div>
+            <div className='unfilled-50'>50%</div>
           </footer>
         </div>
-          <div class="chart">
-          <span>Html</span>
+        <div class="chart">
+          <p>ReactJS</p>
           <footer>
-            <div className='fulfill'>60%</div>
-            <div className='empty'>40%</div>
+            <div className='filled-50'>50%</div>
+            <div className='unfilled-50'>50%</div>
           </footer>
         </div>
-        {/* <p>Ruby on Rails</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JS</p>
-      </div>
-      <div>
+        <div class="chart">
+          <p>CSS</p>
+          <footer>
+            <div className='filled-70'>70%</div>
+            <div className='unfilled-30'>30%</div>
+          </footer>
+        </div>
+        <div class="chart">
+          <p>HTML</p>
+          <footer>
+            <div className='filled-70'>70%</div>
+            <div className='unfilled-30'>30%</div>
+          </footer>
+        </div>
+        <div class="chart">
+          <p>Bootstrap</p>
+          <footer>
+            <div className='filled-50'>50%</div>
+            <div className='unfilled-50'>50%</div>
+          </footer>
+        </div>
+
+
+
+      {/* <div>
         <h2>Data</h2>
       </div>
       <div>
@@ -42,6 +66,9 @@ const Skills = () => {
       </div>
       <div>
   <h2>Soft skills</h2>*/}
+
+
+
       </div>
     </div>
   );
