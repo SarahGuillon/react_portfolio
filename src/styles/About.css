@@ -1,4 +1,4 @@
-.card {
+.card-about {
   color: white;
   text-align: justify;
   max-width: 60%;
@@ -6,18 +6,18 @@
   margin-left: 10vh;
 }
 
-.card .title {
+.card-about .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.card .title h1 {
+.card-about .title h1 {
   color: #A58965;
   font-size: 48px;
 }
 
-.card .title p {
+.card-about .title p {
   color: white;
   font-family: 'Shadows Into Light', cursive;
   font-size: 40px;
@@ -26,19 +26,19 @@
   top: -70px;
 }
 
-.card text, .card span, .card p {
+.card-about text, .card span, .card p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 1.4;
 }
 
-.card text a {
+.card-about text a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   color: #e4c9a6;
 }
 
-.card text span {
+.card-about text span {
   text-decoration: blink;
 }

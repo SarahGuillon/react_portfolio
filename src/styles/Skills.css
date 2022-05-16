@@ -1,3 +1,9 @@
+.card-skills {
+  color: white;
+  text-align: justify;
+  margin-top: 16vh;
+  margin-left: 10vh;
+}
 
 .chart {
   display: flex;
@@ -5,20 +11,50 @@
   padding: 1px 10px;
   height: 40px;
 }
+.skills-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+.skills-categories {
+  width: 30%;
+  /* border-left: 1px solid #6b6666; */
+  height: 100%;
+}
+
+.skills-details {
+  width: 50%;
+  border-left: 2px solid #424040;
+  padding-left: 30px;
+}
+
+.svg-inline--fa {
+  color: transparent;
+}
+
+.active .svg-inline--fa {
+  color: white;
+}
 
 .subtitle {
+  width: 100%;
+  padding: 0 20px;
+  /* height: 50px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 66%;
-  margin-bottom: 10px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 10px;
+  color: #ADADAD;
 }
 
-.subtitle:hover {
+.active {
   background-color: #2d2c2c;
+  color: white;
+  /* border-left: 2px solid white; */
+  /* border-bottom: 1px solid white; */
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 h2, .svg-inline--fa {
@@ -28,15 +64,15 @@ h2, .svg-inline--fa {
 
 
 .chart p {
-  width: 15%;
-  margin-right: 10px;
+  width: 20%;
+  margin-right: 5%;
   padding-bottom: 4px;
 }
 
 footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-start;
   width: 50%;
 }
 
@@ -44,48 +80,46 @@ footer {
   background-color: #A58965;
   color: transparent;
   width: 60%;
-  height: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.unfilled-40 {
-  background-color: #a9a7a7;
-  width: 40%;
-  color: transparent;
-  height: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  height: 6px;
+  border-radius: 5px;
 }
 
 .filled-50 {
   background-color: #A58965;
   color: transparent;
   width: 50%;
-  height: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  height: 6px;
+  border-radius: 5px;
 }
-.unfilled-50 {
-  background-color: #a9a7a7;
-  width: 50%;
-  color: transparent;
-  height: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+
 .filled-40 {
   background-color: #A58965;
   color: transparent;
   width: 40%;
-  height: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  height: 6px;
+  border-radius: 5px;
 }
-.unfilled-60 {
-  background-color: #a9a7a7;
-  width: 60%;
+
+.filled-30 {
+  background-color: #A58965;
   color: transparent;
-  height: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 30%;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.filled-70 {
+  background-color: #A58965;
+  color: transparent;
+  width: 70%;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.filled-80 {
+  background-color: #A58965;
+  color: transparent;
+  width: 80%;
+  height: 6px;
+  border-radius: 5px;
 }

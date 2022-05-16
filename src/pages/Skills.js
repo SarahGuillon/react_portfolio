@@ -1,26 +1,47 @@
 import '../styles/Skills.css';
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillsList from '../components/SkillsList.js'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skills = () => {
 
-  const [isActive, setIsActive] = useState(false);
+  const categories = [ "Web", "Project Management", "Data", "Soft Skills" ];
+  const [categoryTarget, setCategoryTarget] = useState("web");
 
-  return (
-    <div className="card">
+  useEffect(() => {
+    document.querySelector(".skills-categories .subtitle").classList.add("active");
+  },[])
+
+  const handleMouseEnter = (e) => {
+    setCategoryTarget(e.target.textContent);
+    const categoryTarget = e.target.querySelector("h2").textContent;
+    // console.log(categoryTarget);
+    const allSubtitles = document.querySelectorAll(".skills-categories .subtitle");
+    // console.log(allSubtitles);
+    allSubtitles.forEach(subtitle => {
+      subtitle.classList.remove("active");
+    });
+    e.target.classList.add("active");
+        // console.log(allSubtitles);
+  }
+
+
+
+    return (
+    <div className="card-skills">
       <div className="title">
         <h1>Skills</h1>
       </div>
-      <div className="skills">
-        <div className="subtitle" onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
-          <h2> Web </h2>
-          <FontAwesomeIcon icon={faCaretDown} />
+      <div className="skills-container">
+        <div className="skills-categories">
+          { categories.map(category => (
+            <div className="subtitle" onMouseEnter={(e) => handleMouseEnter(e)} key={categories.indexOf(category)}>
+              <h2>{category}</h2>
+            </div>
+          )) }
         </div>
-        <div className="skills-list">
-          {isActive && <SkillsList/>}
-        </div>
+        {<SkillsList skillCategory={categoryTarget}/>}
       </div>
     </div>
   );
