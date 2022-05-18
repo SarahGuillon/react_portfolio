@@ -5,6 +5,10 @@ import { useState } from 'react';
 
 const TopNavbar = () => {
   const [click, setClick] = useState(false);
+  const handleClick = () => {
+    console.log("hello");
+    setClick(!click);
+  }
 
   return (
     <div className="top-navbar">
@@ -17,23 +21,24 @@ const TopNavbar = () => {
             </div>
           </Link>
         </div>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} onClick={handleClick} />
       </div>
-      <div className="dropdown-list" onClick={() => (setClick(!click))}>
-        { click && <ul>
-          <li>
+      <div className="dropdown-list">
+        { click &&
+        <ul>
+          <li onClick={handleClick}>
             <Link to='./about'> About </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link to="./skills"> Skills </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link to=""> Projects </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link to=""> Experiences </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link to="./contact">Contact</Link>
           </li>
           {/* <li>
