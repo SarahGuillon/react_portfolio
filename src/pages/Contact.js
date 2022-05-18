@@ -3,7 +3,7 @@ import Form from '../components/Form.js'
 
 const Contact = () => {
   return (
-    <div className="container" >
+    <div className="container-contact" >
       <div className="card-form">
           <h1> Contact me</h1>
           <p className="contact-subtitle">I am looking for a job of front end or full stack developer, based in Nantes. If you have question don't hesitate to use the form.</p>

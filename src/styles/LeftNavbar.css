@@ -1,5 +1,5 @@
 /* Navbar */
-.navbar {
+.left-navbar-container {
   height: 100%;
   width: 152px;
   position: fixed;
@@ -10,7 +10,7 @@
   padding: 0;
   margin: 0;
 }
-.navbar li, .navbar a {
+.left-navbar li, .left-navbar a {
   margin: 0 auto;
   padding: 30px 0;
   border-top: 1px solid #282828;
@@ -24,17 +24,17 @@
   text-decoration: none;
 }
 
-.navbar a:hover {
+.left-navbar a:hover {
   color: #e4c9a6;
 
 }
 
-.navbar .logo {
+.left-navbar .left-navbar-logo {
   background-color:  #000000;
   padding: 40px 0;
 }
 
-.navbar p {
+.left-navbar p {
   margin: 0;
   background-color:  #000000;
   font-size: 14px;
@@ -43,7 +43,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navbar .familyName {
+.left-navbar .familyName {
   color:  #A58965;
   font-size: 26px;
   font-weight: 400;
@@ -51,7 +51,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navbar .firstName {
+.left-navbar .firstName {
   color:  white;
   font-weight: 400;
   font-size: 26px;

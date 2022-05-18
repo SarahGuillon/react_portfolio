@@ -1,39 +1,35 @@
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.css';
+import '../styles/LeftNavbar.css';
+import '../styles/TopNavbar.css';
+import LeftNavbar from '../components/LeftNavbar.js';
+import { useState, useEffect } from 'react';
+import TopNavbar from './TopNavbar';
+
+
+
 
 const Navbar = () => {
+  const [leftNavBar , setLeftNavbar] = useState(true);
+
+  const showNavBar = () => {
+    if (window.innerWidth <= 768) {
+      setLeftNavbar(false);
+    } else {
+      setLeftNavbar(true);
+    }
+  };
+
+  useEffect(() => {
+    showNavBar();
+    window.addEventListener('resize', showNavBar);
+    return (
+      window.removeEventListener('resize', showNavBar)
+    )
+  }, []);
+
   return (
-    <ul className="navbar">
-      <li className="logo">
-        <Link to ='./'>
-          <div>
-            <p className="firstName">Sarah</p>
-            <p className="familyName">GUILLON</p>
-            <p className="job">Web developer</p>
-          </div>
-        </Link>
-      </li>
-      <li>
-        <Link to='./about'> About </Link>
-      </li>
-      <li>
-        <Link to="./skills"> Skills </Link>
-      </li>
-      <li>
-        <Link to=""> Projects </Link>
-      </li>
-      <li>
-        <Link to=""> Resume </Link>
-      </li>
-      <li>
-        <Link to="./contact">Contact</Link>
-      </li>
-      <li>
-        <div className="social">
-          <i></i>
-        </div>
-      </li>
-    </ul>
+    <div>
+      { leftNavBar ? <LeftNavbar/> : <TopNavbar/> }
+    </div>
   )
 }
 

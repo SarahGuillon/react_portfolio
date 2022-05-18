@@ -6,8 +6,9 @@
 * {
   background-color: #1F1F1F;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
-.content {
+/* .content {
   margin-left: 152px;
-}
+} */

@@ -1,0 +1,44 @@
+.top-navbar{
+  width: 100%;
+}
+
+.top-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #000000;
+  color: white;
+  padding: 10px;
+}
+
+.svg-inline--fa {
+  color: white;
+  background-color: #000000;
+  font-size: 18px;
+}
+
+.top-navbar-logo, .top-navbar-logo div {
+  background-color:  #000000;
+}
+
+.top-navbar .familyName {
+  color:  #A58965;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:  #000000;
+  padding-bottom: 0;
+}
+
+.top-navbar .firstName {
+  color:  white;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:  #000000;
+}
+
+.top-navbar a {
+  text-decoration: none;
+}
