@@ -1,6 +1,6 @@
-.top-navbar{
+/* .top-navbar{
   width: 100%;
-}
+} */
 
 .top-navbar-container {
   display: flex;
@@ -8,14 +8,19 @@
   align-items: center;
   background-color:  #131313;
   color: white;
-  padding: 0 12px;
+  padding: 0 3vh;
   height: 10vh;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  left: 0;
 }
 
 .svg-inline--fa {
   color: white;
   background-color: #131313;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .top-navbar-logo, .top-navbar-logo div {
@@ -24,18 +29,16 @@
 
 .top-navbar .familyName {
   color:  #A58965;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  padding-bottom: 20px;
   font-family: 'Source Sans Pro', sans-serif;
   background-color:  #131313;
-  padding-bottom: 0;
 }
 
 .top-navbar .firstName {
   color:  white;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   background-color:  #131313;
 }
@@ -50,28 +53,28 @@
   right: 0;
   top: 10vh;
   background-color: #131313;
-  padding: 0;
-  margin: 0;
-  height: 90vh;
+  height: 100vh;
 }
 
 .dropdown-list ul {
   padding-left: 10px;
   padding-right: 10px;
   background-color: #131313;
+  width: 22vh;
 }
 
 .dropdown-list a, .dropdown-list li {
-  padding: 30px 0;
+  padding: 30px 2vh;
   border-top: 1px solid #282828;
   border-bottom: 1px solid #282828;
   background-color:  #131313;
   color: #ADADAD;
   list-style: none;
-  text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
+  align-content: center;
+  text-align: center;
 }
 
 .dropdown-list a:hover {
