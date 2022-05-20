@@ -1,15 +1,6 @@
 .card-about {
   color: white;
   text-align: justify;
-  max-width: 60%;
-  margin-top: 16vh;
-  margin-left: 10vh;
-}
-
-.card-about .title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .card-about .title h1 {
@@ -17,16 +8,7 @@
   font-size: 48px;
 }
 
-.card-about .title p {
-  color: white;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 40px;
-  transform: rotate(15deg);
-  position: relative;
-  top: -70px;
-}
-
-.card-about text, .card span, .card p {
+.card-about text, .card-about text span, .card p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 1.4;
@@ -39,6 +21,36 @@
   color: #e4c9a6;
 }
 
-.card-about text span {
-  text-decoration: blink;
+@media screen and (min-width: 481px) {
+  .card-about {
+    margin-left: 180px;
+    margin-top: 80px;
+    padding: 5vh;
+    max-width: 50%;
+  }
+  .card-about .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-about .title p {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    transform: rotate(15deg);
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-about {
+    padding: 40px;
+    margin-top: 100px;
+  }
+  .card-about .title p {
+    font-size: 24px;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 5vh;
+  }
 }

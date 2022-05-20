@@ -15,8 +15,6 @@ const Skills = () => {
 
   const handleMouseEnter = (e) => {
     setCategoryTarget(e.target.textContent);
-    const categoryTarget = e.target.querySelector("h2").textContent;
-    // console.log(categoryTarget);
     const allSubtitles = document.querySelectorAll(".skills-categories .subtitle");
     // console.log(allSubtitles);
     allSubtitles.forEach(subtitle => {
@@ -25,8 +23,6 @@ const Skills = () => {
     e.target.classList.add("active");
         // console.log(allSubtitles);
   }
-
-
 
     return (
     <div className="card-skills">

@@ -1,7 +1,8 @@
 /* Navbar */
 .left-navbar-container {
+  --left-navbar-width: 152px;
   height: 100%;
-  width: 152px;
+  width: var(--left-navbar-width);
   position: fixed;
   z-index: 1;
   top: 0;
