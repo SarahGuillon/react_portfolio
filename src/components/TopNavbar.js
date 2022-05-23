@@ -33,7 +33,7 @@ const TopNavbar = () => {
             <Link to="./skills"> Skills </Link>
           </li>
           <li onClick={handleClick}>
-            <Link to=""> Projects </Link>
+            <Link to="./projects"> Projects </Link>
           </li>
           <li onClick={handleClick}>
             <Link to=""> Experiences </Link>

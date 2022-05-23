@@ -1,72 +1,42 @@
 .card-skills {
   color: white;
-  text-align: justify;
-  margin-top: 16vh;
-  margin-left: 10vh;
+}
+.card-skills .title {
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .chart {
   display: flex;
   align-items: center;
-  padding: 1px 10px;
-  height: 40px;
-}
-.skills-container {
-  display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 60px;
-}
-.skills-categories {
-  width: 30%;
-  /* border-left: 1px solid #6b6666; */
-  height: 100%;
+  margin-bottom: 5px;
 }
 
 .skills-details {
-  width: 50%;
-  border-left: 2px solid #424040;
-  padding-left: 30px;
+  max-width: 60%;
+  height: 250px;
 }
 
-.svg-inline--fa {
-  color: transparent;
+.subtitle h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
-.active .svg-inline--fa {
-  color: white;
+.skills-category {
+  margin: 5px;
 }
-
-.subtitle {
-  width: 100%;
-  padding: 0 20px;
-  /* height: 50px; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #ADADAD;
-}
-
-.active {
-  background-color: #2d2c2c;
-  color: white;
-  /* border-left: 2px solid white; */
-  /* border-bottom: 1px solid white; */
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-h2, .svg-inline--fa {
-  background-color: transparent;
-}
-
-
 
 .chart p {
-  width: 20%;
-  margin-right: 5%;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
+  color: rgb(185, 174, 174);
+  font-weight: 600;
 }
 
 footer {
@@ -77,49 +47,130 @@ footer {
 }
 
 .filled-60 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 60%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition-delay: 250ms;
+  transition-property: background-color;
 }
 
 .filled-50 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 50%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .filled-40 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 40%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .filled-30 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 30%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .filled-70 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 70%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .filled-80 {
-  background-color: #A58965;
+  background-color: #cb9d61;
   color: transparent;
   width: 80%;
-  height: 6px;
-  border-radius: 5px;
+  height: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.unfilled-40 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 40%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.unfilled-50 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 50%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.unfilled-60 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 60%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.unfilled-70 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 70%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.unfilled-30 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 30%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.unfilled-20 {
+  background-color: #2d2c2c;
+  color: transparent;
+  width: 20%;
+  height: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media screen and (min-width: 481px) {
+  .card-skills {
+    margin-left: 180px;
+    margin-top: 80px;
+    padding: 5vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-skills {
+    padding: 40px;
+    margin-top: 100px;
+  }
+  .skills-details {
+    /* margin-right: 0; */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
 }

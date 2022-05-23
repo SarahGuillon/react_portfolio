@@ -1,44 +1,50 @@
 import '../styles/Skills.css';
 import SkillsList from '../components/SkillsList.js'
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
+import Grid from '@material-ui/core/Grid';
 // import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skills = () => {
 
-  const categories = [ "Web", "Project Management", "Data", "Soft Skills" ];
-  const [categoryTarget, setCategoryTarget] = useState("web");
+  const categories = [ "Web", "Soft Skills",  "Project Management", "Data"];
+  // const [categoryTarget, setCategoryTarget] = useState("");
+  // const [displayList, setDisplayList] = useState(false)
 
-  useEffect(() => {
-    document.querySelector(".skills-categories .subtitle").classList.add("active");
-  },[])
+  // useEffect(() => {
+  //   document.querySelector(".skills-categories .subtitle h2").classList.add("active");
+  //   setCategoryTarget("Web");
+  //   setDisplayList(true);
+  // },[])
 
-  const handleMouseEnter = (e) => {
-    setCategoryTarget(e.target.textContent);
-    const allSubtitles = document.querySelectorAll(".skills-categories .subtitle");
-    // console.log(allSubtitles);
-    allSubtitles.forEach(subtitle => {
-      subtitle.classList.remove("active");
-    });
-    e.target.classList.add("active");
-        // console.log(allSubtitles);
-  }
+  // const handleClick = (e) => {
+  //   const allSubtitles = document.querySelectorAll(".skills-categories .subtitle h2");
+  //   allSubtitles.forEach(subtitle => {
+  //     subtitle.classList.remove("active");
+  //   });
+  //   setCategoryTarget(e.target.textContent);
+  //   e.target.classList.add("active");
+  //   console.log(e);
+  //   setDisplayList(true);
+  // }
 
     return (
     <div className="card-skills">
       <div className="title">
         <h1>Skills</h1>
       </div>
-      <div className="skills-container">
-        <div className="skills-categories">
-          { categories.map(category => (
-            <div className="subtitle" onMouseEnter={(e) => handleMouseEnter(e)} key={categories.indexOf(category)}>
-              <h2>{category}</h2>
+      <Grid container className="skills-container">
+        { categories.map(category => (
+          <Grid item xs={12} md={6}>
+            <div className="skills-category">
+              <div className="subtitle" key={categories.indexOf(category)}>
+                <h2>{category}</h2>
+              </div>
+              <div className="skills-list">{<SkillsList skillCategory={category}/>}</div>
             </div>
-          )) }
-        </div>
-        {<SkillsList skillCategory={categoryTarget}/>}
-      </div>
+          </Grid>
+        )) }
+      </Grid>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+.carousel .slide .project-image {
+  width: 250px;
+}
+
+.carousel-slider {
+  max-width: 50%;
+}
+.carousel-wrapper {
+  width: 100%;
+}
+
+.control-dots {
+  display: none;
+}
+.carousel .thumbs-wrapper, .carousel-status {
+  display: none;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 481px) {
+  .card-projects {
+    margin-left: 180px;
+    margin-top: 80px;
+    padding: 5vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-projects {
+    padding: 40px;
+    margin-top: 100px;
+  }
+}

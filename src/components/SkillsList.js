@@ -21,22 +21,22 @@ const SkillsList = (props) => {
     },
     { "id": "4",
       "name": "Javascript",
-      "value": "40",
+      "value": "50",
       "category": "web"
     },
     { "id": "5",
       "name": "ReactJS",
-      "value": "40",
+      "value": "50",
       "category": "web"
     },
     { "id": "6",
       "name": "Bootstrap",
-      "value": "30",
+      "value": "40",
       "category": "web"
     },
     { "id": "7",
       "name": "Figma",
-      "value": "30",
+      "value": "40",
       "category": "web"
     },
     { "id": "8",
@@ -46,7 +46,7 @@ const SkillsList = (props) => {
     },
     { "id": "9",
     "name": "Github",
-    "value": "40",
+    "value": "60",
     "category": "project management"
     },
     { "id": "10",
@@ -56,7 +56,7 @@ const SkillsList = (props) => {
     },
     { "id": "11",
     "name": "SQL",
-    "value": "30",
+    "value": "40",
     "category": "data"
     },
     { "id": "12",
@@ -65,18 +65,8 @@ const SkillsList = (props) => {
     "category": "data"
     },
     { "id": "13",
-    "name": "SAP",
-    "value": "50",
-    "category": "data"
-    },
-    { "id": "14",
-    "name": "Business Object",
-    "value": "50",
-    "category": "data"
-    },
-    { "id": "15",
-    "name": "Bix",
-    "value": "50",
+    "name": "BI Software",
+    "value": "80",
     "category": "data"
     },
     { "id": "16",
@@ -91,17 +81,17 @@ const SkillsList = (props) => {
     },
     { "id": "18",
     "name": "Rigor",
-    "value": "70",
+    "value": "80",
     "category": "soft skills"
     },
     { "id": "19",
     "name": "Curiosity",
-    "value": "60",
+    "value": "70",
     "category": "soft skills"
     },
     { "id": "20",
     "name": "Team Work",
-    "value": "60",
+    "value": "70",
     "category": "soft skills"
     },
     { "id": "21",
@@ -122,7 +112,7 @@ const SkillsList = (props) => {
           <p>{skillDetailsPerCategory.name}</p>
           <footer>
             <div className={`filled-${ skillDetailsPerCategory.value }`}>{`${ skillDetailsPerCategory.value }%`}</div>
-            {/* <div className={`unfilled-${ 100 - parseInt(webSkill.value, 10) }`}>{`${ 100 - parseInt(webSkill.value, 10) }%`}</div> */}
+            <div className={`unfilled-${ 100 - parseInt(skillDetailsPerCategory.value, 10) }`}>{`${ 100 - parseInt(skillDetailsPerCategory.value, 10) }%`}</div>
           </footer>
         </div>
       ))}
