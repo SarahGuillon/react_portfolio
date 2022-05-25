@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 
 const Contact = () => {
   return (
-    <div className="container-contact" >
+    <div className="contact-content" >
       <Grid container>
         <Grid item xs={0} md={0}></Grid>
         <Grid item xs={12} md={6}>

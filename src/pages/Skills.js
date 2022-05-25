@@ -29,7 +29,7 @@ const Skills = () => {
   // }
 
     return (
-    <div className="card-skills">
+    <div className="skills-content">
       <div className="title">
         <h1>Skills</h1>
       </div>

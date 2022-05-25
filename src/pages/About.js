@@ -3,7 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
   return (
-    <div className="card-about">
+    <div className="about-content">
       <div className="title">
         <h1> About me</h1>
         <p> { `Open to work :) `}</p>

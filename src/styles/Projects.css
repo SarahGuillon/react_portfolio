@@ -1,38 +1,132 @@
-.carousel .slide .project-image {
-  width: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+.project-card-text h2 {
+  font-size: 30px;
+  font-weight: 400;
+  background-color: white;
+  color: #b59264;
+  font-family: 'Caveat Brush', cursive;
+  /* text-shadow: 0 2px 5px rgba(0,0,0,0.6); */
 }
 
-.carousel-slider {
-  max-width: 50%;
-}
-.carousel-wrapper {
-  width: 100%;
+.project-card-text {
+  background-color:  white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
 
-.control-dots {
-  display: none;
+.projects-content {
+  height: 100vh;
 }
-.carousel .thumbs-wrapper, .carousel-status {
-  display: none;
+
+
+.project-card {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+.project-card-text-hover {
+  background-color: #b59264;
+  /* background: linear-gradient(.45turn, #f1efec, 2%, #b59264); */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+
+}
+
+.project-card-text-hover h2 {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  color: #ecddc8;
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 80px;
+}
+/* .carousel .slide .project-image {
+  width: 250px;
 }
 
+.carousel-wrapper {
+  width: 300px;
+}
+
+.carousel .thumbs-wrapper, .carousel-status, .control-dots {
+  display: none;
+}
+
+
+
+.projects-container .project-description p, .projects-container .project-description h2, .projects-container .project-description a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.projects-container .project-description h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.projects-container .project-description {
+  text-align: justify;
+  margin-left: 50px;
+  line-height: 1.4;
+  width: 500px;
+}
+
+.project-description svg {
+  background-color: transparent;
+  margin-right: 5px;
+  font-size: 18px;
+  padding-bottom: 0px;
+}
+
+.project-description .icons p {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.projects-container .carousel.carousel-slider .control-arrow:hover {
+  background-color: transparent; */
+/* } */
 
 @media screen and (min-width: 481px) {
-  .card-projects {
+  .projects-content {
     margin-left: 180px;
     margin-top: 80px;
+    margin-right: calc(180px - 152px);
     padding: 5vh;
+    height: 80vh;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
   }
 }
-@media screen and (max-width: 480px) {
-  .card-projects {
+/* @media screen and (max-width: 480px) {
+  .projects-content {
     padding: 40px;
     margin-top: 100px;
   }
-}
+} */
