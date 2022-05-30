@@ -61,6 +61,96 @@
 .projects-container {
   margin-top: 80px;
 }
+
+.carousel-wrapper {
+  width: 60%;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: -90px;
+}
+
+.projects-content .close {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 200px;
+}
+
+.projects-content .close:hover {
+  color: grey;
+}
+
+.carousel-wrapper .project-title h2 {
+  color: white;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.carousel .slide .project-picture {
+  width: 60%;
+}
+
+/* .carousel-wrapper .project-slide .project-text {
+  color: white;
+
+} */
+
+.carousel-wrapper .project-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-slide .carousel-root {
+  width: 700px;
+}
+
+.project-slide .project-text {
+  color: rgb(224, 220, 220);
+  width: 700px;
+  margin-left: 50px;
+  line-height: 1.4;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.carousel .thumbs-wrapper, .carousel-status, .control-dots {
+  display: none;
+}
+
+.projects-container .carousel.carousel-slider .control-arrow:hover {
+  background-color: transparent;
+}
+
+.project-slide .icons {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.project-slide .icons svg {
+  background-color: transparent;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.project-slide .icons a, .project-slide .icons span {
+  color:white;
+  text-decoration: none;
+  line-height: 2.4;
+}
+
+.project-slide .icons a:hover {
+  color:#deb98a;
+}
+
 /* .carousel .slide .project-image {
   width: 250px;
 }
@@ -108,7 +198,7 @@
 
 .projects-container .carousel.carousel-slider .control-arrow:hover {
   background-color: transparent; */
-/* } */
+
 
 @media screen and (min-width: 481px) {
   .projects-content {
