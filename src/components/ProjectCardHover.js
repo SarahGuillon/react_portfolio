@@ -3,7 +3,7 @@ const ProjectCardHover = (props) => {
   const projectPicture = props.projectPicture;
 
   return (
-    <div className="project-card" style={{background: `${projectPicture}`, backgroundPosition: 'center', backgroundSize: 'cover', height: '300px', width:'350px'}}>
+    <div className="project-card" style={{background: `${projectPicture}`, backgroundPosition: 'center', backgroundSize: 'cover', height: '220px', width:'280px'}}>
       <div className="project-card-text-hover">
         <h2>{projectName}</h2>
       </div>

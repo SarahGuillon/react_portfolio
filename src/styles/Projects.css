@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 .project-card-text h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
-  background-color: white;
+  /* background-color: #b59264; */
+  background-color:   #ecddc8;
   color: #b59264;
   font-family: 'Caveat Brush', cursive;
   /* text-shadow: 0 2px 5px rgba(0,0,0,0.6); */
 }
 
 .project-card-text {
-  background-color:  white;
+  background-color:  #ecddc8;
+  color: white;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,11 +39,11 @@
 }
 
 .project-card-text-hover {
-  background-color: #b59264;
+  background-color: #d7b78d;
   /* background: linear-gradient(.45turn, #f1efec, 2%, #b59264); */
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +52,7 @@
 }
 
 .project-card-text-hover h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   background-color: transparent;
   color: #ecddc8;
