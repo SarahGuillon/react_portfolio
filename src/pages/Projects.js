@@ -33,7 +33,7 @@ const Projects = () => {
   const [projectHoverTwo, setProjectHoverTwo] = useState(false);
   const [projectHoverTree, setProjectHoverThree] = useState(false);
   const betNewsPictures = [BetNews1, BetNews2, BetNews3, BetNews4, BetNews5, BetNews6];
-  const BAOnBPictures = [baobab1, baobab2, baobab3, baobab4, baobab5, baobab6];
+  const BAOnBPictures = [baobab2, baobab3, baobab4, baobab5, baobab6, baobab1];
   const portfolioPictures = [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6];
 
   const betNewsProjectText = () => {
@@ -79,15 +79,15 @@ Since the end of my training at Le Wagon, I have continued to learn on my own. I
           {!betNewsSelected && !BAOnBSelected && !portfolioSelected && projectHoverOne && <ProjectCardHover projectName={"view project"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(255, 208, 132, 0.15)), url(https://images.unsplash.com/photo-1611159063981-b8c8c4301869)'}/>}
           {betNewsSelected && <CarouselComponent projectPicture={betNewsPictures} projectName={"BetNews"} projectText={betNewsProjectText()} projectFramework={"Ruby on Rails"} projectGithubLink={"https://github.com/Xastiro/BetNews"} projectWebLink={"http://www.betnews.fr/"}/>}
         </div>
-        <div onMouseEnter={(e)=> setProjectHoverTwo(true)} onMouseLeave={(e)=> setProjectHoverTwo(false)} onClick={(e) => setBAOnBSelected(true)}>
-          {!betNewsSelected && !BAOnBSelected && !portfolioSelected && !projectHoverTwo && <ProjectCard projectName={"Bao'n'B"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1570742544137-3a469196c32b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869)'}/>}
-          {!betNewsSelected && !BAOnBSelected && !portfolioSelected && projectHoverTwo && <ProjectCardHover projectName={"view project"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1570742544137-3a469196c32b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869)'}/>}
-          {BAOnBSelected && <CarouselComponent projectPicture={BAOnBPictures} projectName={"BAOnB"} projectText={BAOnBProjectText()} projectFramework={"Ruby on Rails"} projectGithubLink={"https://github.com/Hugo-Ferrand/baobab"} projectWebLink={"https://stormy-brushlands-99936.herokuapp.com/"}/>}
-        </div>
         <div onMouseEnter={(e)=> setProjectHoverThree(true)} onMouseLeave={(e)=> setProjectHoverThree(false)} onClick={(e) => setPortfolioSelected(true)}>
           {!betNewsSelected && !BAOnBSelected && !portfolioSelected && !projectHoverTree && <ProjectCard projectName={"Portfolio"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170)'}/>}
           {!betNewsSelected && !BAOnBSelected && !portfolioSelected && projectHoverTree && <ProjectCardHover projectName={"view project"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170)'}/>}
           {portfolioSelected && <CarouselComponent projectPicture={portfolioPictures} projectName={"Portfolio"} projectText={portfolioProjectText()} projectFramework={"React JS"} projectGithubLink={"https://github.com/SarahGuillon/react_portfolio"} projectWebLink={"https://github.com/SarahGuillon/react_portfolio"}/>}
+        </div>
+        <div onMouseEnter={(e)=> setProjectHoverTwo(true)} onMouseLeave={(e)=> setProjectHoverTwo(false)} onClick={(e) => setBAOnBSelected(true)}>
+          {!betNewsSelected && !BAOnBSelected && !portfolioSelected && !projectHoverTwo && <ProjectCard projectName={"Bao'n'B"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1570742544137-3a469196c32b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869)'}/>}
+          {!betNewsSelected && !BAOnBSelected && !portfolioSelected && projectHoverTwo && <ProjectCardHover projectName={"view project"} projectPicture={'linear-gradient(rgba(255, 208, 132, 0.15), rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1570742544137-3a469196c32b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869)'}/>}
+          {BAOnBSelected && <CarouselComponent projectPicture={BAOnBPictures} projectName={"BAOnB"} projectText={BAOnBProjectText()} projectFramework={"Ruby on Rails"} projectGithubLink={"https://github.com/Hugo-Ferrand/baobab"} projectWebLink={"https://stormy-brushlands-99936.herokuapp.com/"}/>}
         </div>
       </div>
     </div>

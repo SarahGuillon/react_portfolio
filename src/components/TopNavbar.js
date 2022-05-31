@@ -36,7 +36,7 @@ const TopNavbar = () => {
             <Link to="./projects"> Projects </Link>
           </li>
           <li onClick={handleClick}>
-            <Link to=""> Experiences </Link>
+            <Link to="./experience"> Experience </Link>
           </li>
           <li onClick={handleClick}>
             <Link to="./contact">Contact</Link>

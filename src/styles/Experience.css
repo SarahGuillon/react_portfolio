@@ -1,0 +1,50 @@
+.experience-container {
+  margin-top: 80px;
+  color: #c4c2c2;
+  line-height: 1.4;
+}
+
+.experience-card h3 span {
+  color: #e4c9a6;
+}
+
+.experience-card h3 {
+  color: white;
+  margin-top: 52px;
+}
+
+.experience-card svg {
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+.experience-card .month {
+  color:#7c7575;
+  font-weight: 500;
+  margin-top: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 19px;
+}
+
+.experience-card ul {
+  margin-top: 8px;
+  font-size: 14px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+
+@media screen and (min-width: 481px) {
+  .experience-content {
+    margin-left: 180px;
+    margin-top: 80px;
+    padding: 5vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-content {
+    padding: 40px;
+    margin-top: 100px;
+  }
+}
