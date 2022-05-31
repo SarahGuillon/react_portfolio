@@ -16,7 +16,7 @@ const About = () => {
         <span>I am currently looking for a job of front end or full stack developer.</span><br></br><br></br>
         Learning continuously,  developing my creativity and working within a team is a great source of motivation for me.
         I am a curious person, social and well-organized. Thanks to my previous experiences, I developed my capacity for rigor, analysis and my autonomy.<br></br><br></br>
-        When I'm not learning code, I enjoy doing sports, going out with my friends, travelling, hiking, as well as manual and creative activities : sewing, dried flowers, macramé...<br></br><br></br>
+        When I'm not learning code, I enjoy doing sports, going out with my friends, travelling, hiking, as well as doing manual and creative activities (sewing, dried flowers...) or volunteering in associations like La Croix Rouge or La Ressourcerie de l'Ile, in Rezé.<br></br><br></br>
         <span>Interested in my profile ? <Link to="/contact">Contact me</Link></span>
       </text>
     </div>
