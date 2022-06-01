@@ -136,7 +136,8 @@
     font-size: 14px;
   }
   .projects-content .close {
-    margin-right: 550px;
+    margin-left: 850px;
+    justify-content: flex-start;
   }
   .project-card-text-hover {
     background-color: #d7b78d;
