@@ -16,27 +16,13 @@
   color: #e4c9a6;
 }
 
-.about-content .right-card img {
-  width: 50%;
-  border-radius: 100%;
-  opacity: 0.5;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
-  margin: 0 auto;
-}
-.about-content .right-card{
-  display: block;
-  justify-content: center;
-  text-align: center;
-}
 
 @media screen and (min-width: 481px) {
   .about-content {
     margin-left: 180px;
     margin-top: 80px;
     padding: 5vh;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
+    max-width: 50%;
   }
   .about-content .title {
     display: flex;
@@ -47,14 +33,11 @@
     color: white;
     font-family: 'Shadows Into Light', cursive;
     font-size: 40px;
-    transform: rotate(-10deg);
+    transform: rotate(15deg);
     position: relative;
-    top: -10px;
-    left: 400px;
+    top: -60px;
+    left: 20px;
     background-color: transparent;
-  }
-  .about-content .left-card {
-    max-width: 50%;
   }
 }
 

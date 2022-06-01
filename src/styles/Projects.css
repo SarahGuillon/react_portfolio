@@ -108,7 +108,8 @@
     align-items: center;
   }
   .carousel-wrapper {
-    width: 60%;
+    /* width: 60%; */
+    height: 500px;
     align-content: center;
     margin: 0 auto;
     /* margin-top: -90px; */
@@ -119,11 +120,11 @@
     justify-content: space-between;
   }
   .project-slide .carousel-root {
-    width: 700px;
+    width: 400px;
   }
   .project-slide .project-text {
     color: rgb(224, 220, 220);
-    width: 700px;
+    width: 400px;
     margin-left: 50px;
     line-height: 1.4;
     font-size: 15px;
@@ -135,7 +136,7 @@
     font-size: 14px;
   }
   .projects-content .close {
-    margin-right: 200px;
+    margin-right: 550px;
   }
   .project-card-text-hover {
     background-color: #d7b78d;
