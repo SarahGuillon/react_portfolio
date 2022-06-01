@@ -1,5 +1,5 @@
 .experience-container {
-  margin-top: 80px;
+  margin-top: 50px;
   color: #c4c2c2;
   line-height: 1.4;
 }
@@ -10,7 +10,8 @@
 
 .experience-card h3 {
   color: white;
-  margin-top: 52px;
+  margin-top: 48px;
+  font-size: 16px;
 }
 
 .experience-card svg {
@@ -23,14 +24,12 @@
   font-weight: 500;
   margin-top: 4px;
   font-family: 'Roboto', sans-serif;
-  margin-left: 19px;
 }
 
 .experience-card ul {
   margin-top: 8px;
   font-size: 14px;
   padding-left: 20px;
-  margin-left: 20px;
 }
 
 

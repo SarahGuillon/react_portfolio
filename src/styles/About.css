@@ -3,11 +3,6 @@
   text-align: justify;
 }
 
-.about-content .title h1 {
-  color: #A58965;
-  font-size: 48px;
-}
-
 .about-content text, .about-content text span, .card p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
@@ -21,25 +16,45 @@
   color: #e4c9a6;
 }
 
+.about-content .right-card img {
+  width: 50%;
+  border-radius: 100%;
+  opacity: 0.5;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  margin: 0 auto;
+}
+.about-content .right-card{
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
 @media screen and (min-width: 481px) {
   .about-content {
     margin-left: 180px;
     margin-top: 80px;
     padding: 5vh;
-    max-width: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
   }
   .about-content .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .about-content .title p {
+  .about-content p {
     color: white;
     font-family: 'Shadows Into Light', cursive;
     font-size: 40px;
-    transform: rotate(15deg);
+    transform: rotate(-10deg);
     position: relative;
-    top: -70px;
+    top: -10px;
+    left: 400px;
+    background-color: transparent;
+  }
+  .about-content .left-card {
+    max-width: 50%;
   }
 }
 
@@ -48,9 +63,13 @@
     padding: 40px;
     margin-top: 100px;
   }
-  .about-content .title p {
+  .about-content p {
     font-size: 24px;
     font-family: 'Shadows Into Light', cursive;
     margin-bottom: 5vh;
+    background-color: transparent;
+  }
+  .about-content .right-card {
+    margin-top: 50px;
   }
 }

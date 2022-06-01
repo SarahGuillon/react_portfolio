@@ -29,7 +29,7 @@ const Experience = () => {
           <p className="month">October 2018 - July 2022 </p>
           <ul>
             <li>Preparing financial reports</li>
-            <li>Analyzing sales evolution and commercial operations performance</li>
+            <li>Analyzing sales evolution and business operations performance</li>
             <li>Calculating financial impact of punctuals events (strike, new merchandising, operating loss...)</li>
             <li>Participating in budget process and monthly closings</li>
             <li>Calculating stores monthly business goals</li>
@@ -50,11 +50,11 @@ const Experience = () => {
           <p className="month">September 2011 - December 2016 </p>
           <ul>
             <li>6-month exchange at Turku School of Economics (Finland) </li>
-            <li>4 internships of 6 months in Financial Control in different groups</li>
+            <li>4 internships of 6 months each in Financial Control in 4 different companies</li>
           </ul>
         </div>
         <div className="experience-card">
-          <h3><FontAwesomeIcon icon={faCaretRight}/> Economic preparatory classes for the <span> @Aliénor d'Aquitaine, Poitiers</span></h3>
+          <h3><FontAwesomeIcon icon={faCaretRight}/> Economic preparatory classes for Business School<span> @Aliénor d'Aquitaine, Poitiers</span></h3>
           <p className="month">September 2019 - June 2011 </p>
         </div>
       </div>

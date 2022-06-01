@@ -2,7 +2,7 @@
   /* margin-top: 22vh;
   margin-left: 10vh; */
   color:#FFFFFF;
-  display: flex;
+  /* display: flex; */
 }
 
 .home-content .presentation {
@@ -37,20 +37,17 @@
   font-weight: bolder;
 }
 
-.home-content img {
-  max-width: 50vh;
-  border-radius: 60%;
-  opacity: 0.5;
-}
-
-
 @media screen and (min-width: 481px) {
   .home-content {
     margin-left: 200px;
     margin-top: 200px;
     padding-left: 6vh;
     align-items: center;
-    /* height: 100vh; */
+   }
+  .home-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 

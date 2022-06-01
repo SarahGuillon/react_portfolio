@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faLinkedin, faGithub  } from "@fortawesome/free-brands-svg-icons";
+import { faAt, faBars} from '@fortawesome/free-solid-svg-icons';
 
 const TopNavbar = () => {
   const [click, setClick] = useState(false);
@@ -41,11 +42,13 @@ const TopNavbar = () => {
           <li onClick={handleClick}>
             <Link to="./contact">Contact</Link>
           </li>
-          {/* <li>
+          <li>
             <div className="social">
-              <i></i>
+              <a href={"https://github.com/SarahGuillon"} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
+              <a href={"https://www.linkedin.com/in/sarahguillon/"} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
+              <Link to="./contact"> <FontAwesomeIcon icon={faAt} /></Link>
             </div>
-          </li> */}
+          </li>
         </ul> }
       </div>
     </div>

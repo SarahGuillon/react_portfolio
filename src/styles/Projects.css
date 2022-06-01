@@ -34,9 +34,9 @@
   margin: 0 8px;
 }
 
-.projects-container {
+/* .projects-container {
   margin-top: 80px;
-}
+} */
 
 
 
@@ -97,7 +97,7 @@
   .projects-content {
     margin-left: 180px;
     margin-top: 80px;
-    margin-right: calc(180px - 152px);
+    margin-right: 28px;
     padding: 5vh;
     height: 80vh;
   }
@@ -111,7 +111,7 @@
     width: 60%;
     align-content: center;
     margin: 0 auto;
-    margin-top: -90px;
+    /* margin-top: -90px; */
   }
   .carousel-wrapper .project-slide {
     display: flex;
@@ -170,7 +170,7 @@
   }
 
   .carousel-wrapper {
-    margin-top: -50px;
+    /* margin-top: -50px; */
     margin-bottom: 50px;
   }
 
@@ -193,5 +193,6 @@
   }
   .projects-content .close {
     margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
