@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faAt} from '@fortawesome/free-solid-svg-icons';
 
-
 const LeftNavbar = () => {
   return (
     <div className="left-navbar">

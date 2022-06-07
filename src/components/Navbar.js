@@ -4,14 +4,11 @@ import LeftNavbar from '../components/LeftNavbar.js';
 import { useState, useEffect } from 'react';
 import TopNavbar from './TopNavbar';
 
-
-
-
 const Navbar = () => {
   const [leftNavBar , setLeftNavbar] = useState(true);
 
   const showNavBar = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 999) {
       setLeftNavbar(false);
     } else {
       setLeftNavbar(true);

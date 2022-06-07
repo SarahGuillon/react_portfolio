@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
-import profilpicture from '../images/profilpicture.png';
 
 const About = () => {
   return (
@@ -16,8 +15,8 @@ const About = () => {
         I participated to the intensive 9-week bootcamp organized by <a href="https://www.lewagon.com/fr/nantes" target="_blank" rel="noopener noreferrer">Le Wagon Nantes</a>.<br></br>
         <span>I am currently looking for a job of front end or full stack developer.</span><br></br><br></br>
         Learning continuously,  developing my creativity and working within a team is a great source of motivation for me.
-        I am a curious person, social and well-organized. Thanks to my previous experiences, I developed my capacity for rigor, analysis and my autonomy.<br></br><br></br>
-        When I'm not learning code, I enjoy doing sports, going out with my friends, travelling, hiking, as well as doing manual and creative activities (sewing, dried flowers...) or volunteering in associations like La Croix Rouge or La Ressourcerie de l'Ile, in Rezé.<br></br><br></br>
+        I am a curious person, social and well-organized. Thanks to my previous experiences, I developed my capacity of rigor, analysis and autonomy.<br></br><br></br>
+        When I'm not learning code, I enjoy doing sports, going out with my friends, travelling, hiking, as well as doing manual and creative activities (sewing, dried flowers...). I also do volunteering in associations like La Croix Rouge or La Ressourcerie de l'Ile, in Rezé.<br></br><br></br>
         <span>Interested in my profile ? <Link to="/contact">Contact me</Link></span>
       </text>
     </div>

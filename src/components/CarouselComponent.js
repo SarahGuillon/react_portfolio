@@ -1,7 +1,6 @@
 import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import {MarkGithubIcon} from '@primer/octicons-react';
 import { faMobileScreen, faCode, faLink} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,8 +13,6 @@ const CarouselComponent = (props) =>  {
   const projectFramework = props.projectFramework;
   const projectWebLink = props.projectWebLink;
   const projectGithubLink = props.projectGithubLink;
-
-
 
     return (
       <div className="carousel-wrapper">
