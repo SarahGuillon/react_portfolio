@@ -29,7 +29,7 @@
     padding: 5vh;
   }
   .about-text {
-    max-width: 50%;
+    max-width: 55%;
   }
   .about-content .title {
     display: flex;
@@ -43,7 +43,7 @@
     transform: rotate(-10deg);
     position: relative;
     top: -30px;
-    left: 70%;
+    left: 65%;
     background-color: transparent;
     align-items: flex-end;
   }

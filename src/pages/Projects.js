@@ -68,7 +68,7 @@ const Projects = () => {
 
   return (
     <div className="projects-content">
-      { (betNewsSelected || BAOnBSelected || portfolioSelected) && <div className="back" onClick={handleClose}> <p><FontAwesomeIcon icon={faArrowLeft}/> back </p> </div>}
+      { (betNewsSelected || BAOnBSelected || portfolioSelected) && <div className="back" onClick={handleClose}> <button ><FontAwesomeIcon icon={faArrowLeft}/> back </button> </div>}
       <div className="title">
         {!betNewsSelected && !BAOnBSelected && !portfolioSelected && <h1>Projects</h1>}
       </div>

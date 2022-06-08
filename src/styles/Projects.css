@@ -28,15 +28,16 @@
   justify-content: center;
 }
 
-.projects-content .back, .projects-content .back svg {
+.projects-content .back button, .projects-content .back svg {
   color: white;
   font-weight: 400;
   font-size: 16px;
   background-color: transparent;
+  border: 0;
 }
 
-.projects-content .back:hover, .projects-content .back svg:hover {
-  color:#b59264;
+.projects-content .back button:hover {
+  font-weight: 600;
 }
 
 .carousel-wrapper .project-title h2 {
