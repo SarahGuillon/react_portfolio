@@ -46,7 +46,7 @@ const Projects = () => {
   const BAOnBProjectText = () => {
     return (
     <div>
-      <p> BAO-n-B is a website made in 1 week by a team of 4 students of Le Wagon, Nantes. <br/><br/>The goal was to create our first marketplace. This web app was generated with lewagon/rails-templates with the framework Ruby on Rails. With BAOnB, you can book or rent a baboab during the period you want. To create this app, we used Ruby, HTML, CSS Simple form, bootstrap, Cloudinary, Heroku and the mapbox API.</p>
+      <p> BAO-n-B is a website made in 1 week by a team of 4 students of Le Wagon, Nantes. <br/><br/>The goal was to create our first marketplace. This web app was generated with lewagon/rails-templates with the framework Ruby on Rails. To create this app, we used Ruby, HTML, CSS Simple form, bootstrap, Cloudinary, Heroku and the mapbox API.</p>
     </div>)
   }
 
@@ -68,7 +68,7 @@ const Projects = () => {
 
   return (
     <div className="projects-content">
-      { (betNewsSelected || BAOnBSelected || portfolioSelected) && <p className="back" onClick={handleClose}> <FontAwesomeIcon icon={faArrowLeft}/> back  </p>}
+      { (betNewsSelected || BAOnBSelected || portfolioSelected) && <div className="back" onClick={handleClose}> <p><FontAwesomeIcon icon={faArrowLeft}/> back </p> </div>}
       <div className="title">
         {!betNewsSelected && !BAOnBSelected && !portfolioSelected && <h1>Projects</h1>}
       </div>
