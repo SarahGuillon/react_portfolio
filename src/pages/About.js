@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-text">
           <text>
             I am Sarah Guillon, 30 years old, located in Nantes. <br></br>
-            I graduated from Neoma Business School and worked 5 years in Financial Controlling. <br></br><br></br>
+            I graduated from <a href="https://neoma-bs.fr/" target="_blank" rel="noopener noreferrer">Neoma Business School</a> and worked 5 years in Financial Controlling. <br></br><br></br>
             In 2022, I started a new challenge, I decided to learn coding and loved it ! <br></br>
             I participated in the intensive 9-week bootcamp organized by <a href="https://www.lewagon.com/fr/nantes" target="_blank" rel="noopener noreferrer">Le Wagon Nantes</a>.<br></br>
             <span>I am currently looking for a front end or full stack developer job.</span><br></br><br></br>

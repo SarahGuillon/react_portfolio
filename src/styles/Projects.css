@@ -41,7 +41,6 @@
 }
 
 .project-slide {
-  padding: 60px;
   background-color: #2d2c2b;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -168,6 +167,9 @@
   .projects-content {
     height: 100vh;
   }
+  .project-slide {
+    padding: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -214,5 +216,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .project-slide {
+    padding: 20px;
   }
 }
