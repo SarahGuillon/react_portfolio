@@ -24,17 +24,18 @@
 
 .home-content .contact a {
   text-decoration: none;
-  color:#FFFFFF;
-  border: 1px solid #FFFFFF;
+  color:#e4c9a6;
+  border: 1px solid #e4c9a6;
   border-radius: 1px;
-  padding: 12px 48px;
+  padding: 14px 72px;
   background-color:  #1F1F1F;
 }
 
 .home-content .contact a:hover {
-  color:#e4c9a6;
-  border: 2px solid rgb(228, 201, 166);
-  font-weight: bolder;
+  color:white;
+  border: 2px solid   #A58965;
+  background-color:  #A58965;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
@@ -46,8 +47,19 @@
   }
   .home-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .tag {
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 35px;
+  transform: rotate(-10deg);
+  position: relative;
+  top: 0px;
+  left: 30px;
+  background-color: transparent;
   }
 }
 
@@ -63,4 +75,14 @@
   .home-content .detail {
     font-size: 16px;
   }
+  .tag {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28px;
+    transform: rotate(-8deg);
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 110px;
+    width: fit-content;
+    }
 }

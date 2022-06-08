@@ -35,7 +35,7 @@ const LeftNavbar = () => {
           <div className="social">
             <a href={"https://github.com/SarahGuillon"} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
             <a href={"https://www.linkedin.com/in/sarahguillon/"} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
-            <Link to="./contact"> <FontAwesomeIcon icon={faAt} /></Link>
+            <a href="mailto:sarah.guillon.11@gmail.com"> <FontAwesomeIcon icon={faAt} /></a>
           </div>
         </li>
       </ul>

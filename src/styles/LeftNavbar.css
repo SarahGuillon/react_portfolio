@@ -73,6 +73,10 @@
   border: 0;
 }
 
+.social a svg:hover{
+  color:  #A58965;
+}
+
 .top-navbar .dropdown-list a {
   border: 0;
 }

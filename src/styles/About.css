@@ -3,17 +3,41 @@
   text-align: justify;
 }
 
-.about-content text, .about-content text span, .card p {
+.about-content text, .about-content text span, .card p,
+.about-text .contact p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   line-height: 1.4;
 }
 
-.about-content text a {
+.about-content text a, .about-content a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #e4c9a6;
+}
+
+.about-text .contact a {
+  text-decoration: none;
+  color:#e4c9a6;
+  border: 1px solid #e4c9a6;
+  border-radius: 1px;
+  padding: 8px 42px;
+  background-color:  #1F1F1F;
+}
+
+.about-text .contact {
+  margin-top: 24px;
+}
+.about-text .contact p {
+  margin-bottom: 36px;
+}
+
+.about-text .contact a:hover {
+  color:white;
+  border: 2px solid   #A58965;
+  background-color:  #A58965;
+  cursor: pointer;
 }
 
 .about-content img {
@@ -36,17 +60,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .about-content p {
-    color: white;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 35px;
-    transform: rotate(-10deg);
-    position: relative;
-    top: -30px;
-    left: 65%;
-    background-color: transparent;
-    align-items: flex-end;
-  }
+
   .about-container {
     display: flex;
     justify-content: flex-start;
@@ -65,12 +79,6 @@
   .about-content {
     padding: 40px;
     margin-top: 100px;
-  }
-  .about-content p {
-    font-size: 24px;
-    font-family: 'Shadows Into Light', cursive;
-    margin: 3vh 0;
-    background-color: transparent;
   }
   .about-content .right-card {
     margin-top: 50px;

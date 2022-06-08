@@ -10,7 +10,7 @@ const Home = () => {
           <p className="detail"> Front End / Full Stack Developer </p>
           <div className="contact"><Link to="/contact"> Contact me</Link></div>
         </div>
-
+        <p className="tag"> { `Open to work :) `}</p>
       </div>
     </div>
   )

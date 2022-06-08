@@ -19,9 +19,11 @@ const About = () => {
             Learning continuously,  developing my creativity and working within a team is a great source of motivation for me.
             I am a curious, social and well-organized person. Thanks to my previous experiences, I developed my capacity of thoroughness, analysis and autonomy.<br></br><br></br>
             When I'm not learning to code, I enjoy doing sports, going out with my friends, travelling, hiking, as well as doing manual and creative activities (sewing, dried flowers...). I also volunteer in associations like La Croix Rouge and La Ressourcerie de l'Ile, in Rezé.<br></br><br></br>
-            <span>Interested in my profile ? <Link to="/contact">Contact me</Link></span>
           </text>
-          <p> { `Open to work :) `}</p>
+          <div className="contact">
+            <p>Interested in my profile ?</p>
+            <Link to="/contact"> Contact me</Link>
+          </div>
         </div>
         <div className='picture'>
           <img src={photovdef} alt="profil picture" />
