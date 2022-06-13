@@ -10,7 +10,7 @@ const Contact = () => {
         <Grid item xs={12} md={6}>
           <div className="card-form">
               <h1> Contact me</h1>
-              <p className="contact-subtitle">I am looking for a job of front end or full stack developer, based in Nantes. If you have question don't hesitate to use the form.</p>
+              <p className="contact-subtitle">I am currently looking for a front end or full stack developer job, based in Nantes. If you have question don't hesitate to use the form.</p>
               { <Form/> }
           </div>
         </Grid>

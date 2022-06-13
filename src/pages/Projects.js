@@ -39,21 +39,21 @@ const Projects = () => {
   const betNewsProjectText = () => {
     return (
     <div>
-      <p> BetNews is an mobile application created in 2 weeks with 3 other students of Le Wagon. This is the final project after 9 weeks of an intensive bootcamp.<br></br><br></br>BetNews targets people between 18 and 30 years old who are not really interested in traditional media but want to follow the news while having fun. <br></br><br></br>With BetNews, you can bet on the news with betcoins (after studying the odds), you can create your own bet and you can challenge your friends to the leaderboard. Before betting, you can read articles to learn more about the subject selected. The bets are classified by categories (Economy, Politic, Planet, Entertainment, Culture, Sport...).</p>
+      <p> Final team project of Le Wagon, created in 2 weeks with 3 other students.<br></br><br></br><span>Product :</span> Mobile application to bet on the news. <br></br> With BetNews, you can bet on an upcoming news event with betKoins, publish your own bet and challenge your friends to the leaderboard. Before betting, you can read articles to learn more about the subject selected.<br></br><br></br> <span>Target :</span> people between 18 and 30 years old who are not really interested in traditional media but want to follow the news while having fun.</p>
     </div>)
   }
 
   const BAOnBProjectText = () => {
     return (
     <div>
-      <p> BAO-n-B is a website made in 1 week by a team of 4 students of Le Wagon, Nantes. <br/><br/>The goal was to create our first marketplace. This web app was generated with lewagon/rails-templates with the framework Ruby on Rails. To create this app, we used Ruby, HTML, CSS Simple form, bootstrap, Cloudinary, Heroku and the mapbox API.</p>
+      <p> First team project of Le Wagon, created in 1 week with 3 other students. <br></br><br></br><span>Objective :</span> Create our first marketplace with basic CRUD features and learn to code in a team with Git branches and pull requests. <br></br> Tools : Git, Github, Figma, Bootstrap, Simple form, Cloudinary, Heroku and the mapbox API.</p>
     </div>)
   }
 
   const portfolioProjectText = () => {
     return (
     <div>
-      <p> Since the end of my training at Le wagon, I continue to learn coding on my own. I am currently learning to use React JS and I chose to create my portfolio on this framework to practice. On this project I also worked on the responsive part of the website. </p>
+      <p> After Le Wagon, I continue to learn coding on my own. I am currently learning to use React JS and I chose to create my portfolio on this framework to practice. On this project I also worked on the responsive part of the website. </p>
     </div>)
   }
 

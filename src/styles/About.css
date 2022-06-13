@@ -4,39 +4,26 @@
 }
 
 .about-content text, .about-content text span, .card p,
-.about-text .contact p {
+.about-content .contact p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   line-height: 1.4;
 }
 
-.about-content text a, .about-content a {
+.about-content a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #e4c9a6;
 }
 
-.about-text .contact a {
-  text-decoration: none;
-  color:#e4c9a6;
-  border: 1px solid #e4c9a6;
-  border-radius: 2px;
-  padding: 6px 42px;
-  background-color:  #1F1F1F;
-}
-
-.about-text .contact a:hover {
-  color:white;
-  border: 2px solid   #A58965;
-  background-color:  #A58965;
-  cursor: pointer;
+.about-content a:hover {
+  opacity: 0.8;
 }
 
 .about-content img {
   border-radius: 50%;
 }
-
 
 @media screen and (min-width: 1001px) {
   .about-content {
@@ -46,7 +33,7 @@
     padding: 5vh;
   }
   .about-text {
-    max-width: 55%;
+    max-width: 40%;
   }
   .about-content .title {
     display: flex;
@@ -56,24 +43,15 @@
 
   .about-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
   .about-content .picture {
-    margin-left: 180px;
-    margin-top: -35px;
+    max-width: 40%;
+    margin: auto;
   }
   .about-content img {
     height: 350px;
-  }
-  .about-text .contact {
-    margin-top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .about-text .contact p {
-    margin-right: 30px;
   }
 }
 
@@ -88,12 +66,15 @@
   .about-content .picture {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 32px auto;
   }
   .about-content img {
-    height: 250px;
+    height: 200px;
   }
-  .about-text .contact p {
-    margin-bottom: 30px;
+  .about-content .contact {
+    margin: 32px auto;
+    padding-top: 32px;
+    width: 200px;
+    text-align: center;
   }
 }

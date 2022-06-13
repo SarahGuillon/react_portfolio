@@ -35,6 +35,9 @@
   background-color: transparent;
   border: 0;
 }
+.projects-content .back button {
+  margin-bottom: 24px;
+}
 
 .projects-content .back button:hover {
   font-weight: 600;
@@ -46,26 +49,12 @@
   border-bottom-right-radius: 10px;
   box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
-.project-text, .project-text p, .project-text a, .project-text span, .carousel * {
+.project-text, .project-text p, .project-text a, .project-text h2, .project-text h4, .project-text span, .carousel * {
   background-color: #2d2c2b;
-}
-
-.carousel-wrapper .project-title h2 {
-  color: white;
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  background-color: #2d2c2b;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .carousel .slide .project-picture {
-  width: 65%;
+  width: 70%;
 }
 
 .carousel .thumbs-wrapper, .carousel-status, .control-dots {
@@ -76,22 +65,23 @@
   background-color: transparent;
 }
 
-.project-text .framework {
-  font-weight: 600;
-  margin-top: 30px;
-  font-size: 14px;
+.project-text h2, .project-text h4 {
+  margin-bottom: 16px;
+}
+
+.project-text span {
+  font-weight: 600  ;
 }
 
 .project-slide .icons svg {
   background-color: transparent;
-  width: 24px;
-  margin-right: 10px;
+  width: 16px;
+  margin-right: 8px;
   color:#e6c9a3;
 }
 
 .project-slide .icons a {
   text-decoration: none;
-  line-height: 2.4;
 }
 
 .project-slide .icons a {
@@ -99,7 +89,7 @@
   font-weight: 400;
 }
 .project-slide .icons a:hover {
-  color:#c5a171;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 769px) {
@@ -108,7 +98,6 @@
     margin-top: 80px;
     margin-right: 28px;
     padding: 5vh;
-    height: 80vh;
   }
   .projects-container {
     display: flex;
@@ -136,7 +125,7 @@
     text-align: justify;
   }
   .project-slide .icons {
-    margin-top: 30px;
+    margin-top: 24px;
     font-weight: 500;
     font-size: 14px;
   }
@@ -157,6 +146,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
   }
   .project-card-text-hover h2 {
     font-size: 16px;
@@ -178,7 +168,6 @@
     margin-top: 100px;
   }
   .carousel-wrapper {
-    /* margin-bottom: 50px; */
     margin:  0 auto;
   }
   .project-card {
@@ -195,12 +184,10 @@
   .project-slide .icons {
     margin-top: 30px;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 30px;
   }
-  .projects-content .back {
-    margin-bottom: 30px;
-  }
+
   .project-card-text-hover h2 {
     font-weight: 500;
     background-color: transparent;
@@ -219,5 +206,8 @@
   }
   .project-slide {
     padding: 20px;
+  }
+  .project-slide .icons svg {
+    width: 12px;
   }
 }

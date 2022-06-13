@@ -16,9 +16,7 @@ const CarouselComponent = (props) =>  {
 
     return (
       <div className="carousel-wrapper">
-        <div className="project-title">
-          <h2>{projectName} project</h2>
-        </div>
+
         <div className="project-slide">
           <Carousel infiniteLoop useKeyboardArrows>
             <div>
@@ -41,8 +39,10 @@ const CarouselComponent = (props) =>  {
             </div>
           </Carousel>
           <div className="project-text">
+            <h2>{projectName}</h2>
+            <h4>Project developed with {projectFramework} framework</h4>
             {projectText}
-            <p className="framework">Framework {projectFramework} </p>
+
             <div className="icons">
               <p><MarkGithubIcon size={16} /><a href={projectGithubLink} target="_blank" rel="noopener noreferrer">   {projectGithubLink}</a></p>
               <p><FontAwesomeIcon icon={faLink} /> <a href={projectWebLink} target="_blank" rel="noopener noreferrer">  {projectWebLink}</a></p>
