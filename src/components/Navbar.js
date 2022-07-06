@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
       window.removeEventListener('resize', showNavBar)
     )
-  }, []);
+  }, [leftNavBar]);
 
   return (
     <div>
