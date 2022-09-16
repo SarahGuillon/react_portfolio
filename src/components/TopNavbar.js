@@ -5,9 +5,11 @@ import {faLinkedin, faGithub  } from "@fortawesome/free-brands-svg-icons";
 import { faAt, faBars} from '@fortawesome/free-solid-svg-icons';
 
 const TopNavbar = () => {
+
   const [click, setClick] = useState(false);
+
   const handleClick = () => {
-    console.log("hello");
+    // console.log("hello");
     setClick(!click);
   }
 

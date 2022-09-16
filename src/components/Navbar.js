@@ -18,10 +18,10 @@ const Navbar = () => {
   useEffect(() => {
     showNavBar();
     window.addEventListener('resize', showNavBar);
-    return (
-      window.removeEventListener('resize', showNavBar)
-    )
-  }, [leftNavBar]);
+    // return (
+    //   window.removeEventListener('resize', showNavBar)
+    // )
+  }, []);
 
   return (
     <div>
