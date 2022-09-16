@@ -4,6 +4,8 @@ export const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    // emailjs.sendForm(serviceID, templateID, templateParams, publicKey)
     emailjs.sendForm('gmail', 'template_ab90xuc', e.target, 'WhuYOU8sw5XGtXPyg')
       .then((result) => {
           console.log(result.text);
